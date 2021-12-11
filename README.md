@@ -32,12 +32,13 @@ This guide corresponds to [Eleventy documentation](https://www.11ty.dev/docs/plu
     ```
 
 ## Configuration object
-A general configuration object is needed to pass via Eleventy config when the plugin is initiated. This sections lists the available configuration properties.
+A general configuration object can be passed optionally via Eleventy config when the plugin is initiated. This sections lists the available configuration properties.
 
 ### `locale`
 This property affects the output language of the filters. See [`locales` argument section on Intl page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument) for more info.
 
 - **Type**: String
+- **Default value**: `undefined` (**Node.js** will pick up the system's language)
 - **Example values**: `"en-GB"`, `"hu"`
 
 ## Filters

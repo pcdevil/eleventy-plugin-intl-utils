@@ -40,5 +40,20 @@ This property affects the output language of the filters. See [`locales` argumen
 - **Type**: String
 - **Example values**: `"en-GB"`, `"hu"`
 
+## Filters
+
+### `language_name`
+Transforms a language code to a renderable text. Useful for language selectors or when the current language is displayed.
+
+- **Used Internationalization API**: `Intl.DisplayNames()` with _language_ type, see [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/DisplayNames#using_type_language_with_languagedisplay)
+
+#### LiquidJS Example
+
+```
+{% assign language = "en-GB" %}
+{{ language | language_name }}
+{% comment %} renders "British English" when the `intlUtilConfig.locale` is `en` {% endcomment %}
+```
+
 ## License
 Available under the [MIT license](LICENSE.md).

@@ -6,7 +6,9 @@
     "node": ">= 16.0.0"
   },
   "main": ".eleventy.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "npx eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pcdevil/eleventy-plugin-intl-utils.git"
@@ -20,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/pcdevil/eleventy-plugin-intl-utils/issues"
   },
-  "homepage": "https://github.com/pcdevil/eleventy-plugin-intl-utils#readme"
+  "homepage": "https://github.com/pcdevil/eleventy-plugin-intl-utils#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
 }

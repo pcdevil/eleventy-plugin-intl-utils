@@ -1,0 +1,36 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"standard"
+	],
+
+	"ignorePatterns": [
+		"!.eleventy.js"
+	],
+
+	"parserOptions": {
+		"sourceType": "script"
+	},
+
+	"root": true,
+
+	"rules": {
+		"curly": ["error", "all"],
+		"array-element-newline": ["error", "consistent"],
+		"arrow-parens": ["error", "always"],
+		"comma-dangle": ["error", {
+			"arrays": "always-multiline",
+			"exports": "always-multiline",
+			"functions": "never",
+			"imports": "always-multiline",
+			"objects": "always-multiline"
+		}],
+		"indent": ["error", "tab"],
+		"no-tabs": "off",
+		"object-property-newline": ["error", {
+			"allowAllPropertiesOnSameLine": false
+		}],
+		"semi": ["error", "always"],
+		"valid-jsdoc": "off"
+	}
+}

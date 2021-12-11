@@ -1,0 +1,23 @@
+{
+  "name": "@pcdevil/eleventy-plugin-intl-utils",
+  "version": "0.0.0",
+  "description": "A set of internationalization utils for Eleventy.",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcdevil/eleventy-plugin-intl-utils.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Attila Gonda",
+    "url": "https://attilagonda.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pcdevil/eleventy-plugin-intl-utils/issues"
+  },
+  "homepage": "https://github.com/pcdevil/eleventy-plugin-intl-utils#readme"
+}

@@ -82,5 +82,20 @@ Transforms a date string to a short date time text. Useful for blog post dates.
 {% comment %} renders "12/12/21, 5:36 PM" when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
 
+### `year_interval`
+Transforms two date strings to a year range. Useful when a larger time interval is presented.
+
+The input should be an array with two date string and the first one should precede before the second one.
+
+- **Used Internationalization API**: `Intl.DateTimeFormat.prototype.formatRange()` with _numeric_ year ([MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange))
+
+#### LiquidJS Example
+
+```
+{% assign dates = "2011-05-16 11:00 +0200, 2020-03-01 00:00 +0100" | split: ", " %}
+{{ dates | year_interval }}
+{% comment %} renders "2011 – 2020" (with en dash in the middle) when the `intlUtilConfig.locale` is `en` {% endcomment %}
+```
+
 ## License
 Available under the [MIT license](LICENSE.md).

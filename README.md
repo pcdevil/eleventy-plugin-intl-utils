@@ -43,6 +43,19 @@ This property affects the output language of the filters. See [`locales` argumen
 
 ## Filters
 
+### `country_name`
+Transforms a country code into a country name. Useful to display author's location.
+
+- **Used Internationalization API**: `Intl.DisplayNames()` with _region_ type, see [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/DisplayNames)
+
+#### LiquidJS Example
+
+```
+{% assign country = "FR" %}
+{{ country | country_name }}
+{% comment %} renders "France" when the `intlUtilConfig.locale` is `en` {% endcomment %}
+```
+
 ### `language_name`
 Transforms a language code to a renderable text. Useful for language selectors or when the current language is displayed.
 

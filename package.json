@@ -13,7 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/pcdevil/eleventy-plugin-intl-utils.git"
   },
-  "keywords": [],
+  "keywords": [
+    "11ty",
+    "blog",
+    "eleventy",
+    "internationalization",
+    "static-site",
+    "website"
+  ],
   "author": {
     "name": "Attila Gonda",
     "url": "https://attilagonda.com"

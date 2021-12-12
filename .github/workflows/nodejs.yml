@@ -1,0 +1,25 @@
+name: Node.js CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v2
+    - id: get-node-version
+      name: Get Node.js version
+      run: echo "::set-output name=node_version::$(cat .nvmrc)"
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ steps.get-node-version.outputs.node_version }}
+    - name: Install npm dependencies
+      run: npm ci
+    - name: Perform style check
+      run: npm run lint

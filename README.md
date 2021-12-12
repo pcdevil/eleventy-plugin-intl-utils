@@ -46,7 +46,7 @@ This property affects the output language of the filters. See [`locales` argumen
 ### `country_name`
 Transforms a country code into a country name. Useful to display author's location.
 
-- **Used Internationalization API**: `Intl.DisplayNames()` with _region_ type, see [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/DisplayNames)
+- **Used Internationalization API**: `Intl.DisplayNames()` with _region_ type ([MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/DisplayNames))
 
 #### LiquidJS Example
 
@@ -59,7 +59,7 @@ Transforms a country code into a country name. Useful to display author's locati
 ### `language_name`
 Transforms a language code to a renderable text. Useful for language selectors or when the current language is displayed.
 
-- **Used Internationalization API**: `Intl.DisplayNames()` with _language_ type, see [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/DisplayNames#using_type_language_with_languagedisplay)
+- **Used Internationalization API**: `Intl.DisplayNames()` with _language_ type ([MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/DisplayNames#using_type_language_with_languagedisplay))
 
 #### LiquidJS Example
 
@@ -72,7 +72,7 @@ Transforms a language code to a renderable text. Useful for language selectors o
 ### `short_datetime_format`
 Transforms a date string to a short date time text. Useful for blog post dates.
 
-- **Used Internationalization API**: `Intl.DateTimeFormat()` with _short_ date and time style, see [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat)
+- **Used Internationalization API**: `Intl.DateTimeFormat()` with _short_ date and time style ([MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat))
 
 #### LiquidJS Example
 

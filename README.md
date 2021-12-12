@@ -56,5 +56,18 @@ Transforms a language code to a renderable text. Useful for language selectors o
 {% comment %} renders "British English" when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
 
+### `short_datetime_format`
+Transforms a date string to a short date time text. Useful for blog post dates.
+
+- **Used Internationalization API**: `Intl.DateTimeFormat()` with _short_ date and time style, see [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat)
+
+#### LiquidJS Example
+
+```
+{% assign postDate = "2021-12-12 17:36 +0100" %}
+{{ postDate | short_datetime_format }}
+{% comment %} renders "12/12/21, 5:36 PM" when the `intlUtilConfig.locale` is `en` {% endcomment %}
+```
+
 ## License
 Available under the [MIT license](LICENSE.md).

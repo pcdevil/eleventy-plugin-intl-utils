@@ -1,6 +1,10 @@
 {
   "name": "@pcdevil/eleventy-plugin-intl-utils",
   "version": "0.0.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A set of internationalization utils for Eleventy.",
   "engines": {
     "node": ">= 16.0.0"

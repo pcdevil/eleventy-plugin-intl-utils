@@ -4,7 +4,7 @@ A set of internationalization utils for [Eleventy](https://www.11ty.dev/).
 ## Motivation
 It's super fast to create a static website with **Eleventy** and with the help of [`eleventy-plugin-i18n`](https://www.npmjs.com/package/eleventy-plugin-i18n) localization can be done with ease too.
 
-However it only gives solution for static data and dynamic data still needs treatment during layout rendering. This plugin aims to help with a set of [filters](https://www.11ty.dev/docs/filters/).
+However it only gives solution for static data and dynamic data still needs treatment during layout rendering. This plugin aims to help with a set of [filters](https://www.11ty.dev/docs/filters/) and [shortcodes](https://www.11ty.dev/docs/shortcodes/).
 
 The implementations of the filters are mostly wrappers around the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) with a little _bit of sugar_.
 
@@ -82,6 +82,8 @@ Transforms a date string to a short date time text. Useful for blog post dates.
 {% comment %} renders "12/12/21, 5:36 PM" when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
 
+## Shortcodes
+
 ### `year_interval`
 Transforms two date strings to a year range. Useful when a larger time interval is presented.
 
@@ -92,8 +94,9 @@ The input should be an array with two date string and the first one should prece
 #### LiquidJS Example
 
 ```
-{% assign dates = "2011-05-16 11:00 +0200, 2020-03-01 00:00 +0100" | split: ", " %}
-{{ dates | year_interval }}
+{% assign startDate = "2011-05-16 11:00 +0200" %}
+{% assign endDate = "2020-03-01 00:00 +0100" %}
+{% year_interval startDate, endDate %}
 {% comment %} renders "2011 – 2020" (with en dash in the middle) when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
 

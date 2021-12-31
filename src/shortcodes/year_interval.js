@@ -5,7 +5,7 @@ function yearIntervalFactory (locale) {
 		year: 'numeric',
 	});
 
-	return (startDate, endDate) => dateTimeFormat.formatRange(new Date(startDate), new Date(endDate));
+	return (startDate, endDate = new Date()) => dateTimeFormat.formatRange(new Date(startDate), new Date(endDate));
 }
 
 module.exports = yearIntervalFactory;

@@ -100,5 +100,16 @@ The input should be an array with two date string and the first one should prece
 {% comment %} renders "2011 – 2020" (with en dash in the middle) when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
 
+#### Fallback value
+The second `endDate` argument can be omitted and it has the current date as default value.
+
+This behaviour helps when an open-ended / ongoing interval needs be displayed:
+
+```
+{% assign startDate = "2011-05-16 11:00 +0200" %}
+{% year_interval startDate %}
+{% comment %} renders "2011 – 2021" (with en dash in the middle) when the `intlUtilConfig.locale` is `en` and the current year is 2021 {% endcomment %}
+```
+
 ## License
 Available under the [MIT license](LICENSE.md).

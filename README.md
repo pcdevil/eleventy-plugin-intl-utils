@@ -60,8 +60,9 @@ Transforms a country code into a country name. Useful to display author's locati
 ```
 {% assign country = "FR" %}
 {{ country | country_name }}
-{% comment %} renders "France" when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
+
+This renders "France" when the `intlUtilConfig.locale` is `en`.
 
 ### `language_name`
 Transforms a language code to a renderable text. Useful for language selectors or when the current language is displayed.
@@ -73,8 +74,9 @@ Transforms a language code to a renderable text. Useful for language selectors o
 ```
 {% assign language = "en-GB" %}
 {{ language | language_name }}
-{% comment %} renders "British English" when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
+
+This renders "British English" when the `intlUtilConfig.locale` is `en`.
 
 ### `short_datetime_format`
 Transforms a date string to a short date time text. Useful for blog post dates.
@@ -86,8 +88,9 @@ Transforms a date string to a short date time text. Useful for blog post dates.
 ```
 {% assign postDate = "2021-12-12 17:36 +0100" %}
 {{ postDate | short_datetime_format }}
-{% comment %} renders "12/12/21, 5:36 PM" when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
+
+This renders "12/12/21, 5:36 PM" when the `intlUtilConfig.locale` is `en`.
 
 ## Shortcodes
 
@@ -104,8 +107,9 @@ The input should be an array with two date string and the first one should prece
 {% assign startDate = "2011-05-16 11:00 +0200" %}
 {% assign endDate = "2020-03-01 00:00 +0100" %}
 {% year_interval startDate, endDate %}
-{% comment %} renders "2011 – 2020" (with en dash in the middle) when the `intlUtilConfig.locale` is `en` {% endcomment %}
 ```
+
+This renders "2011 – 2020" (with en dash in the middle) when the `intlUtilConfig.locale` is `en`.
 
 #### Fallback value
 The second `endDate` argument can be omitted and it has the current date as default value.
@@ -115,8 +119,9 @@ This behaviour helps when an open-ended / ongoing interval needs be displayed:
 ```
 {% assign startDate = "2011-05-16 11:00 +0200" %}
 {% year_interval startDate %}
-{% comment %} renders "2011 – 2021" (with en dash in the middle) when the `intlUtilConfig.locale` is `en` and the current year is 2021 {% endcomment %}
 ```
+
+This renders "2011 – 2021" (with en dash in the middle) when the `intlUtilConfig.locale` is `en` and the current year is 2021.
 
 ## License
 Available under the [MIT license](LICENSE.md).

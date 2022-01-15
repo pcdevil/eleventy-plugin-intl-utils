@@ -8,13 +8,6 @@ However it only gives solution for static data and dynamic data still needs trea
 
 The implementations of the filters are mostly wrappers around the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) with a little _bit of sugar_.
 
-## Current state
-The package uses [Semantic Versioning](https://semver.org/) to signal changes between releases.
-
-Currently is at _major version zero_ and as [the specification states](https://semver.org/#spec-item-4) the current API is not at stable state.
-
-Please always compare versions between updates!
-
 ## Usage
 This guide corresponds to [Eleventy documentation](https://www.11ty.dev/docs/plugins/#add-the-plugin-to-eleventy-in-your-config-file):
 

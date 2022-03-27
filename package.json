@@ -21,6 +21,7 @@
     "11ty",
     "blog",
     "eleventy",
+    "eleventy-plugin",
     "internationalization",
     "static-site",
     "website"

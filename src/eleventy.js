@@ -1,9 +1,9 @@
 'use strict';
 
-const countryNameFactory = require('./src/filters/country_name');
-const languageNameFactory = require('./src/filters/language_name');
-const shortDateTimeFormatFactory = require('./src/filters/short_datetime_format');
-const yearIntervalFactory = require('./src/shortcodes/year_interval');
+const countryNameFactory = require('./filters/country_name');
+const languageNameFactory = require('./filters/language_name');
+const shortDateTimeFormatFactory = require('./filters/short_datetime_format');
+const yearIntervalFactory = require('./shortcodes/year_interval');
 
 module.exports = (eleventyConfig, pluginConfig = {}) => {
 	const { locale } = pluginConfig;

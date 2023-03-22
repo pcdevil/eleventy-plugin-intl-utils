@@ -4,10 +4,6 @@
 		"standard"
 	],
 
-	"ignorePatterns": [
-		"!.eleventy.js"
-	],
-
 	"parserOptions": {
 		"sourceType": "script"
 	},

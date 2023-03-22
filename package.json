@@ -9,7 +9,7 @@
   "engines": {
     "node": ">= 18.0.0"
   },
-  "main": ".eleventy.js",
+  "main": "./src/eleventy.js",
   "scripts": {
     "lint": "npx eslint .",
     "release:major": "npm version major",

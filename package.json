@@ -11,7 +11,8 @@
   },
   "main": "./src/eleventy.js",
   "scripts": {
-    "lint": "npx eslint .",
+    "lint": "npx eslint --ignore-path .gitignore .",
+    "lint:fix": "npm run lint -- --fix",
     "release:major": "npm version major",
     "release:minor": "npm version minor",
     "release:patch": "npm version patch"

@@ -11,7 +11,10 @@
   },
   "main": ".eleventy.js",
   "scripts": {
-    "lint": "npx eslint ."
+    "lint": "npx eslint .",
+    "release:major": "npm version major",
+    "release:minor": "npm version minor",
+    "release:patch": "npm version patch"
   },
   "repository": {
     "type": "git",

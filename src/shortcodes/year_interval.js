@@ -1,6 +1,6 @@
 'use strict';
 
-function yearIntervalFactory (locale) {
+function yearIntervalFactory(locale) {
 	const dateTimeFormat = new Intl.DateTimeFormat(locale, {
 		year: 'numeric',
 	});

@@ -21,8 +21,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install npm dependencies
         run: npm ci
-      - name: Perform style check
+      - name: Perform code analyzer check
         run: npm run lint
+      - name: Perform code format check
+        run: npm run format
       - name: Publish tag to npm
         if: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/tags/') }}
         env:

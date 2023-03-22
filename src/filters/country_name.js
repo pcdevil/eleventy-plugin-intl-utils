@@ -1,6 +1,6 @@
 'use strict';
 
-function countryNameFactory (locale) {
+function countryNameFactory(locale) {
 	const displayName = new Intl.DisplayNames([locale], { type: 'region' });
 
 	return (countryCode) => displayName.of(countryCode);

@@ -1,6 +1,6 @@
 'use strict';
 
-function shortDateTimeFormatFactory (locale) {
+function shortDateTimeFormatFactory(locale) {
 	const dateTimeFormat = new Intl.DateTimeFormat(locale, {
 		dateStyle: 'short',
 		timeStyle: 'short',

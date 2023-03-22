@@ -1,32 +1,17 @@
 {
+	"env": {
+		"es2022": true,
+		"node": true
+	},
+
 	"extends": [
-		"eslint:recommended",
-		"standard"
+		"eslint:recommended"
 	],
 
 	"parserOptions": {
+		"ecmaVersion": "latest",
 		"sourceType": "script"
 	},
 
-	"root": true,
-
-	"rules": {
-		"curly": ["error", "all"],
-		"array-element-newline": ["error", "consistent"],
-		"arrow-parens": ["error", "always"],
-		"comma-dangle": ["error", {
-			"arrays": "always-multiline",
-			"exports": "always-multiline",
-			"functions": "never",
-			"imports": "always-multiline",
-			"objects": "always-multiline"
-		}],
-		"indent": ["error", "tab"],
-		"no-tabs": "off",
-		"object-property-newline": ["error", {
-			"allowAllPropertiesOnSameLine": false
-		}],
-		"semi": ["error", "always"],
-		"valid-jsdoc": "off"
-	}
+	"root": true
 }

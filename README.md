@@ -116,5 +116,22 @@ This behaviour helps when an open-ended / ongoing interval needs be displayed:
 
 This renders "2011 – 2021" (with en dash in the middle) when the `intlUtilConfig.locale` is `en` and the current year is 2021.
 
+### `year_open_interval`
+Transforms a date string into an _open_ year range where the end date is absent. Useful when a ongoing interval is presented.
+
+- **Used Internationalization API**: `Intl.DateTimeFormat.prototype.formatRange()` with _numeric_ year ([MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange))
+
+#### LiquidJS Example
+
+```
+{% assign startDate = "2011-05-16 11:00 +0200" %}
+{% year_interval startDate %}
+```
+
+This renders "2011 – " (with en dash in the middle) when the `intlUtilConfig.locale` is `en`.
+
+#### Difference from `year_interval`
+While the [`year_interval`](#year_interval) shortcode always created a _closed_ year range (by applying the current year as default), the `year_open_interval` only displays the start date.
+
 ## License
 Available under the [MIT license](LICENSE.md).
